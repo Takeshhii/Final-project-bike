@@ -1,0 +1,38 @@
+footer {
+  background-color: rgb(68, 135, 97);
+  color: white;
+  max-height: 55px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer {
+  max-width: 1440px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer div {
+  max-width: 1440px;
+  padding: 15px;
+  margin: 0 50px;
+  display: flex;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 380px) {
+  .footer {
+    justify-content: center;
+  }
+  .footer div {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 723px) {
+  .footer div:nth-child(2) {
+    display: none;
+  }
+}
